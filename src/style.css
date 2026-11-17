@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #f2e8e4;
+  background: #0d0b10;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.font-romantic {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+::selection {
+  background: #711f35;
+  color: #fff;
+}
+
+
+
+/* Ajustes globais para dispositivos móveis */
+
+html {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: clip;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: clip;
+}
+
+#app {
+  min-height: 100svh;
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+canvas {
+  max-width: 100%;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+@media (max-width: 480px) {
+  button,
+  input {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
